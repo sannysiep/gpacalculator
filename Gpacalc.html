@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="Gpacalc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gpa-scale">
+            <h3>GPA Scale</h3>
+            <table>
+                <tr><th>Grade</th><th>Score</th><th>GPA</th><th>AP GPA</th></tr>
+                <tr><td>A+</td><td>97-100</td><td>4.0</td><td>5.0</td></tr>
+                <tr><td>A</td><td>93-96</td><td>4.0</td><td>5.0</td></tr>
+                <tr><td>A-</td><td>90-92</td><td>3.7</td><td>4.7</td></tr>
+                <tr><td>B+</td><td>87-89</td><td>3.3</td><td>4.3</td></tr>
+                <tr><td>B</td><td>83-86</td><td>3.0</td><td>4.0</td></tr>
+                <tr><td>B-</td><td>80-82</td><td>2.7</td><td>3.7</td></tr>
+                <tr><td>C+</td><td>77-79</td><td>2.3</td><td>3.3</td></tr>
+                <tr><td>C</td><td>73-76</td><td>2.0</td><td>3.0</td></tr>
+                <tr><td>C-</td><td>70-72</td><td>1.7</td><td>2.7</td></tr>
+                <tr><td>D</td><td>65-69</td><td>1.0</td><td>2.0</td></tr>
+                <tr><td>F</td><td>0-64</td><td>0</td><td>0</td></tr>
+            </table>
+        </div>
+        <div class="calculator">
+            <h1>GPA Calculator</h1>
+            <div class="input-group">
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="scores">
+                <div class="input-group">
+                    <label for="apcs">AP Computer Science Principles:</label>
+                    <input type="number" id="apcs" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="chemistry">Chemistry:</label>
+                    <input type="number" id="chemistry" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="apprecalc">AP Precalculus:</label>
+                    <input type="number" id="apprecalc" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="worldlit">World Literature and Composition:</label>
+                    <input type="number" id="worldlit" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="apbio">AP Biology:</label>
+                    <input type="number" id="apbio" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="physics">Physics:</label>
+                    <input type="number" id="physics" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="khmer">Khmer:</label>
+                    <input type="number" id="khmer" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="math">Math:</label>
+                    <input type="number" id="math" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="moral">Moral and Ethics:</label>
+                    <input type="number" id="moral" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="earthscience">Earth Science:</label>
+                    <input type="number" id="earthscience" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="biology">Biology:</label>
+                    <input type="number" id="biology" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="geography">Geography:</label>
+                    <input type="number" id="geography" min="0" max="100">
+                </div>
+                <div class="input-group">
+                    <label for="history">History:</label>
+                    <input type="number" id="history" min="0" max="100">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="calculate">Calculate GPA</button>
+                <button id="clear">Clear All</button>
+            </div>
+            <div id="results"></div>
+        </div>
+    </div>
+    <script src="Gpacalc.js"></script>
+</body>
+</html>
